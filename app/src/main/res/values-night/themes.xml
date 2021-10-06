@@ -14,9 +14,4 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="SplashTheme" parent="Theme.SplashScreen">
-
-        <item name="android:windowBackground">@drawable/splahscreen</item>
-
-    </style>
 </resources>
