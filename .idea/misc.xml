@@ -12,11 +12,18 @@
         <entry key="..\:/Users/danie/Desktop/Doogies-master/ProyectoPPI/app/src/main/res/layout/layout_principal.xml" value="0.1" />
         <entry key="..\:/Users/danie/Desktop/ProyectoPPI/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.17592592592592593" />
         <entry key="..\:/Users/danie/Desktop/ProyectoPPI/app/src/main/res/drawable/button_gradient.xml" value="0.2203125" />
+        <entry key="..\:/Users/danie/Desktop/ProyectoPPI/app/src/main/res/drawable/customborder.xml" value="0.2203125" />
         <entry key="..\:/Users/danie/Desktop/ProyectoPPI/app/src/main/res/drawable/esquinas_redondas_bar.xml" value="0.2203125" />
         <entry key="..\:/Users/danie/Desktop/ProyectoPPI/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1125" />
         <entry key="..\:/Users/danie/Desktop/ProyectoPPI/app/src/main/res/drawable/splahscreen.xml" value="0.17592592592592593" />
         <entry key="..\:/Users/danie/Desktop/ProyectoPPI/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/danie/Desktop/ProyectoPPI/app/src/main/res/layout/layout_principal.xml" value="0.1" />
+        <entry key="..\:/Users/danie/Desktop/ProyectoPPI/app/src/main/res/layout/aprendecampeones.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/danie/Desktop/ProyectoPPI/app/src/main/res/layout/bordesnegros.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/danie/Desktop/ProyectoPPI/app/src/main/res/layout/customborder.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/danie/Desktop/ProyectoPPI/app/src/main/res/layout/item_prinpcipal.xml" value="0.25" />
+        <entry key="..\:/Users/danie/Desktop/ProyectoPPI/app/src/main/res/layout/layout_principal.xml" value="0.25" />
+        <entry key="..\:/Users/danie/Desktop/ProyectoPPI/app/src/main/res/layout/principiosbasicosmapa.xml" value="0.18" />
+        <entry key="..\:/Users/danie/Desktop/ProyectoPPI/app/src/main/res/layout/text_row_item.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

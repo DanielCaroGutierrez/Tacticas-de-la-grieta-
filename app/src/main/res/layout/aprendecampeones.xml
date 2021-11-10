@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/GrayLight">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:background="@color/GrayLight">
+
+
+            <ImageView
+                android:id="@+id/BackPrincipalActiviti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/arrow" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:src="@drawable/loupe" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/letraicono" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Aprende sobre los campeones"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/item_description_layoutC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:animateLayoutChanges="true"
+            android:onClick="Panda"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/customborder"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:text="Que son los campeones"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/flecha_abajo" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/descripcionTextoC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text=" Los personajes son un clave en el juego. Hay diferentes razas, roles y clases y cada uno de estos personajes se componen por: Buffs: mejoras en el daño, rango, duración o enfriamiento de las habilidades. Nerfs: es el empeoramientos de estas mismas que hace difícil que se puede agotar las posibilidades de juego y por último están los Reworks: que son los cambios drásticos de las habilidades de un campeón. Con el término campeón se refiere a los diferentes personajes que existen en el juego y actualmente hay un total de mas de 150 campeones."
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/imagen_campeones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:background="@drawable/campeones"
+                    android:visibility="gone"></ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item_description_layoutC2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:onClick="Pandaa"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/customborder"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.9"
+                            android:text="Clases y subclases"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/flecha_abajo" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/TituloTextoC2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="Tiradores:"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:visibility="gone">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/descripcionTextoC2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="Los tirados o también conocidos como ADC (AD carries). Son los personajes que a una larga distancia mayor daño pueden provocar de todo el equipo pero tienen una baja resistencia. Dispone de una gran fragilidad y sensibilidad frente a las habilidades disruptoras y a los asesinos. La guía LoL recomienda utilizar este personaje para destruir las torres enemigas y sobretodo que los compañeros del equipo protejan a este personaje para que no lo destruyan con facilidad y desarrollar su habilidad al máximo."
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/imagen_adc"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:background="@drawable/adc"
+                        android:visibility="gone"></ImageView>
+
+                    <TextView
+                        android:id="@+id/TituloTextoC3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="Tanques: "
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:visibility="gone">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/descripcionTextoC3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="Los tanques representan lo que su nombre dice. Son capaces de recibir mucho daño y son los campeones más resistentes del juego. Pero el recibir mucho daño tiene una contra, y es que tienen golpes de bajo daño. Son capaces de frenar, congelar, interrumpir e incluso desplazar a enemigos y aliados. Existen dos tipos de este campeón: Vanguardia, son la referencia de ataque y la guía LoL aconseja utilizar a este personaje para las batallas de equipo, ya que suelen ser determinantes. Por último están los Guardianes o Protectores, son los referentes para la defensa de su equipo de los campeones que pueden producir daño pero son frágiles  a las amenazas."
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/imagen_tanque"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:background="@drawable/tanqu"
+                        android:visibility="gone"></ImageView>
+
+
+                    <TextView
+                        android:id="@+id/TituloTextoC4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="luchadores:"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:visibility="gone">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/descripcionTextoC4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="Los luchadores son capaces de causar una gran cantidad de daño y al mismo tiempo recibirlo. Existen dos tipos: Los Colosos, tienen una movilidad limitada y tiene como objetivo destruir a las torres enemigas, crear presión en el mapa y por último interrumpir o desorganizar las peleas numerosas. Por otra banda están los Embestidores,disponen de una gran movilidad y suelen tener uno o dos objetivos en el enemigo que permita tener ventajas en las peleas contra el enemigo. Pero esta guía LoL no recomienda a este campeón para los duelos de uno contra uno."
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/imagen_luchadores"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:background="@drawable/luchador"
+                        android:visibility="gone"></ImageView>
+
+                    <TextView
+                        android:id="@+id/TituloTextoC5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="Magos:"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:visibility="gone">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/descripcionTextoC5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="También llamados AP Carries, disponen de una movilidad reducida y poco resistencia y hace fácil ir a por ellos en el combate. Pero disponen de unas grandes habilidades mágicas que causan mucho daño y los convierte en una gran amenaza. Existen dos tipos: Los Magos de batalla, son los que disponen habilidades de corta-media distancia y para tener relevancia en el juego tienen que colarse en las líneas enemigas. Y por último están los Magos de Artillería: Pueden ocasionar gran cantidad de daño sin tener que exponerse. Tienen habilidades de larga distancia y obliga a los asesinos y tanques de vanguardia a centrarse en su atención."
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/mago"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:background="@drawable/mage"
+                        android:visibility="gone"></ImageView>
+
+                    <TextView
+                        android:id="@+id/TituloTextoC6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="Asesinos:"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:visibility="gone">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/descripcionTextoC6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="Estos personajes destacan por su movilidad y daño.  Se diferencian dos tipos: Los Asesinos, nombrados anteriormente, disponen de una gran movilidad que permite que puedan entrar y salir de las pelas con facilidad pero por otra banda son frágiles a la hora de tener que exponerse. Por último están los Escaramuzadores, son los mejores duelistas de todo el juego. Suelen tener objetivos específicos y pueden recibir una cantidad de daño más alta que los asesinos."
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/asesinos"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:background="@drawable/asesino"
+                        android:visibility="gone"></ImageView>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

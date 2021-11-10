@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/GrayLight">
+    android:background="@color/GrayLight"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,20 +16,18 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="?actionBarSize"
-            android:background="@color/plight">
-
-
+            android:background="@color/GrayLight">
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:padding="10dp"
-                android:src="@drawable/arrow" />
+                android:src="@drawable/letraicono" />
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:padding="15dp"
@@ -36,213 +35,169 @@
 
         </RelativeLayout>
 
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/brandon_grotesque_black"
-            android:text="guias basicas"
-            android:padding="30dp"
-            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
             android:gravity="center"
-            android:textAllCaps="true"
-            android:textSize="20sp"
-            android:textColor="@color/pdark"/>
+            android:text="Guia basica"
+            android:textColor="@color/black"
+            android:textSize="40dp"></TextView>
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_margin="5dp"
-            android:background="#9e9e9e"
-            android:layout_marginTop="26dp">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90px"
+            android:background="@color/pdark2"
+            android:orientation="vertical"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:contentPadding="10dp">
 
             <TextView
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#707070"
-                android:fontFamily="@font/brandon_grotesque_black"
-                android:padding="19dp"
-                android:text="Principios basicos mapa y juego"
-                android:textColor="@color/pdark"
-                android:textSize="19sp"
-                android:textStyle="bold" />
+                android:background="#a0af22"
+                android:padding="10dp"
+                android:text="Principios basicos del mapa"
+                android:textSize="20dp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Aprende Acerca de la grieta del invocador, campamentos, pocisiones y mucha mas" />
 
             <Button
-                android:id="@+id/buttonPrincipiosBasicos"
+
+                android:id="@+id/BasicosMapa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
                 android:background="#00000000"
-                android:padding="20dp"
-                android:text="Ver mas"
-                android:textColor="@color/pdark">
+                android:text="Saber Mas" />
 
-            </Button>
+        </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_marginStart="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginBottom="15dp"
-                android:fontFamily="sans-serif-medium"
-                android:text="Aprende acerca de la grieta del invocador, roles, runas, elementos del mapa y diviciones"
-                android:textColor="@color/pdark"
-                android:textSize="15sp">
-
-            </TextView>
-
-
-        </RelativeLayout>
-
-        <RelativeLayout
-
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_margin="5dp"
-            android:background="#9e9e9e">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90px"
+            android:background="@color/pdark2"
+            android:orientation="vertical"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:contentPadding="10dp">
 
             <TextView
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#707070"
-                android:fontFamily="@font/brandon_grotesque_black"
-                android:padding="19dp"
-                android:text="Principios basicos mapa y juego"
-                android:textColor="@color/pdark"
-                android:textSize="19sp"
-                android:textStyle="bold" />
+                android:background="@color/teal_700"
+                android:padding="10dp"
+                android:text="Aprende sobre los campeones"
+                android:textSize="20dp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Quieres saber acerca de los mas de 140 campeones que hay en el lol, sobre su historia." />
 
             <Button
+                android:id="@+id/aprendecampeones"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentRight="true"
                 android:background="#00000000"
-                android:padding="20dp"
-                android:text="Ver mas"
-                android:textColor="@color/pdark">
+                android:text="Saber Mas" />
 
-            </Button>
+        </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_marginStart="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginBottom="15dp"
-                android:fontFamily="sans-serif-medium"
-                android:text="Aprende acerca de la grieta del invocador, roles, runas, elementos del mapa y diviciones"
-                android:textColor="@color/pdark"
-                android:textSize="15sp">
-
-            </TextView>
-        </RelativeLayout
-           >
-
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_margin="5dp"
-            android:background="#9e9e9e">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90px"
+            android:background="@color/pdark2"
+            android:orientation="vertical"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:contentPadding="10dp">
 
             <TextView
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/brandon_grotesque_black"
-                android:padding="19dp"
-                android:text="Principios basicos mapa y juego"
-                android:textColor="@color/pdark"
-                android:textSize="19sp"
-                android:textStyle="bold"
-                android:background="#707070"/>
+                android:background="@color/primary"
+                android:padding="10dp"
+                android:text="Aprende sobre las runas y objetos "
+                android:textSize="20dp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Tus campeones llevan unas runas especiales que lo hacen mas fuertes en el campo de batalla aprende de ellas y sobre sus itemización" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentRight="true"
                 android:background="#00000000"
-                android:padding="20dp"
-                android:text="Ver mas"
-                android:textColor="@color/pdark">
+                android:text="Saber Mas" />
+        </LinearLayout>
 
-            </Button>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_marginStart="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginBottom="15dp"
-                android:fontFamily="sans-serif-medium"
-                android:text="Aprende acerca de la grieta del invocador, roles, runas, elementos del mapa y diviciones"
-                android:textSize="15sp"
-                android:textColor="@color/pdark">
-
-            </TextView>
-        </RelativeLayout>
-
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_margin="5dp"
-            android:background="#9e9e9e">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90px"
+            android:background="@color/pdark2"
+            android:orientation="vertical"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:contentPadding="10dp">
 
             <TextView
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/brandon_grotesque_black"
-                android:padding="19dp"
-                android:text="Principios basicos mapa y juego"
-                android:textColor="@color/pdark"
-                android:textSize="19sp"
-                android:textStyle="bold"
-                android:background="#707070"/>
+                android:background="#00363a"
+                android:padding="10dp"
+                android:text="Aprende algunos trucos, consejos y secretos"
+                android:textSize="20dp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Quieres saber acerca de eventos, curiosidades, recompesas y ppreguntas frecuentes" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentRight="true"
                 android:background="#00000000"
-                android:padding="20dp"
-                android:text="Ver mas"
-                android:textColor="@color/pdark">
-
-            </Button>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_marginStart="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginBottom="15dp"
-                android:fontFamily="sans-serif-medium"
-                android:text="Aprende acerca de la grieta del invocador, roles, runas, elementos del mapa y diviciones"
-                android:textSize="15sp"
-                android:textColor="@color/pdark">
-
-            </TextView>
-        </RelativeLayout>
+                android:text="Saber Mas" />
+        </LinearLayout>
     </LinearLayout>
 
-
 </ScrollView>
+
+
+
 

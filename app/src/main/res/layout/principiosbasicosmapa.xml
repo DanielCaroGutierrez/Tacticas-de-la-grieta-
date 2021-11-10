@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/GrayLight">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:background="@color/GrayLight">
+
+
+            <ImageView
+                android:id="@+id/BackPrincipalActiviti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/arrow" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:src="@drawable/loupe" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/letraicono" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Princios basicos del mapa"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/item_description_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:animateLayoutChanges="true"
+            android:onClick="expand"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/customborder"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:text="Mapa (Grieta del invocador)"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/flecha_abajo" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/descripcionTexto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text=" En League of Legends se estructura en tres líneas Top, Bot y mid, cada una cuenta con 2 torres por carril para destruir un nexo (estructura de la base de cada equipo) que esta defendido por 3 torres exteriores que defienden a tres inhibidores ( si se destruyen crea a súbditos más fuertes) y 2 torretas más dañinas que las otras que defiendes el nexo si es destruido y significará el final de la partida."
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/imagen_mapa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:background="@drawable/mpa_lol"
+                    android:visibility="gone"></ImageView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_description_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:animateLayoutChanges="true"
+            android:onClick="expando"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/customborder"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:text="Elementos del mapa"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/flecha_abajo" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/TituloTexto2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Subditos:"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:visibility="gone">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/descripcionTexto2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text="Los súbditos o también llamados minions salen desde el nexo del equipo al que se pertenece. Salen súbditos en oleadas y salen cada 30 segundos. Son dos oleadas de 6 minions, 3 melee y 3 de rango,  y seguidamente una oleada aparecen 7 minions, 3 melee, 3 de rango y un súbdito de asedio ( con más capacidad de defensa y daño). Los súbditos ayudan en el combate y cada vez que haya una pelea contra el enemigos, estos les atacarán."
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/imagen_mapa2"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@drawable/minons"
+                    android:visibility="gone">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/TituloTexto2.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Torres"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:visibility="gone">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/descripcionTexto2.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text="Las torres detienen las oleadas de minions y a los enemigos yendo al nexo. Cada torre tiene unas características, como el rango de ataque de visión de todo lo que ocurre. La torre ataca al enemigo que nos haga daño y mientras esté en rango de ataque se puede tratar de destruir a esta misma del enemigo sin que nos ataque. Las torres se colocan de la siguiente manera: dos torres protegen el camino del nexo, otra torre la línea de un inhibidro y dos torres especiales que protegen el nexo cuando esta siendo atacado. Para conseguir ganar la partida se puede destruir un torre de inhibidor, un inhibidor y ya permite que se pueda atacar las dos torres del nexo y el propio nexo. Si no se hace con este ordenen no se podrá tocar las torretas, ya que están invulnerables."
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/imagen_mapa2.1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/torres"
+                    android:visibility="gone"></ImageView>
+
+                <TextView
+                    android:id="@+id/TituloTexto2.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Mostruos"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:visibility="gone">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/descripcionTexto2.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text="Hay un total de 15 campamentos. 8 son de montruos con características normales, 4 dan la posibilidades de mejoras cuando los matas ( 2 rojos y 2 azules) y para acabar 3 permiten mejoras circunstanciales o permanentes.
+Dragones que mejoran la velocidad de los movimientos, regeneración de la vida, el daño a las diferentes estructuras y también a los campeones rivales. Hay un total de 5 por partida o a veces incluso más y el último dragón de la tanda es el Dragón Anciano. Genera una amplificación del daño y  una mejoría en el bonus de todos los dragones que se han matado. El campamento Herlado, es único. Ofrece la posibilidad de involucrarlo enfrente de una torre e irá reduciendo su vida. Otro monstruo a destacar es el Barón Nashor, amplifica el poder de los súbditos. Tacticas de la grieta recomienda conseguir el Barón Nashor porque es determinante en muchas partidas."
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/imagen_mapa2.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/montruos"
+                    android:visibility="gone"></ImageView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_description_layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:animateLayoutChanges="true"
+            android:onClick="expand3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/customborder"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:text="Diferentes Mapas"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/flecha_abajo" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/descripcionTexto3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text="En el juego se encuentran diferentes tipos de mapas y aqui se los vamos a decir cuales son:"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/TituloTexto3.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Abismos de los lamentos:"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:visibility="gone">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/descripcionTexto3.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text="El emparejamiento de Todos Aleatorio, Todos al Medio del Abismo de los Lamentos ya está disponible en esta versión. Lo que comenzasteis como un movimiento de la comunidad, pronto se convirtió en uno de los modos de juego más populares de League of Legends. Ahora, vuestras batallas ARAM tendrán una estética nueva y helada, con nuevos tenderos y entornos destructibles. También hemos adaptado el mapa de tutorial al nuevo aspecto. Dadle al botón Jugar y seleccionad el Abismo de los Lamentos para poneros en la cola de vuestra primera partida emparejada de ARAM."
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/imagen_mapa3.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/abismos"
+                    android:visibility="gone"></ImageView>
+
+                <TextView
+                    android:id="@+id/TituloTexto3.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="teamfight tactics"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:visibility="gone">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/descripcionTexto3.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text="Se trata de un modo de juego más estratégico y estático, totalmente diferente a lo que es el League of Legends hasta el momento. En su búsqueda de buscar nuevas experiencias para los jugadores de LoL, Riot Games decidió presentar este modo de juego, basado en reclutar campeones, mejorar tu equipo y vencer a todos tus oponentes. TFT es un juego de estrategia por rondas en el que te enfrentarás a siete oponentes en una competencia por crear un poderoso equipo que peleará por ti. Tu objetivo: ser el último en quedar en pie."
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/imagen_mapa3.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tft"
+                    android:visibility="gone"></ImageView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
